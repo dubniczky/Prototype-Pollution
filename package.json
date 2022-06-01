@@ -6,6 +6,7 @@
   "repository": "https://gitlab.com/richardnagy/security/protopoll",
   "author": "Richard Antal Nagy <nagy.richard.antal@gmail.com>",
   "license": "MIT",
+  "type": "module",
   "exports": {
     "./*": "./*"
   },
