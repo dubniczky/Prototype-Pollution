@@ -30,7 +30,9 @@ Prototype Pollution is an injection attack targeting JavaScript runtimes. Using 
 ### Using Manual
 
 - NodeJS `v16.15.0`
-- Yarn `v1.22.18`
+- Yarn `v3.2.1`
+
+> The project uses yarn berry with plug'n'play to keep the packages locally since they contain vulnerabilities thus might be removed eventually.
 
 ## Starting Server
 
