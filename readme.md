@@ -2,6 +2,8 @@
 
 JavaScript Prototype Pollution Attack demo against a NodeJS Express server using Lodash
 
+[[_TOC_]]
+
 ## Introduction
 
 Prototype Pollution is an injection attack targeting JavaScript runtimes. Using it, we may overwrite the default values of any object's properties in the running instance. This tampering may lead to controlling the logic of the application, crashing the server or remote code execution.
