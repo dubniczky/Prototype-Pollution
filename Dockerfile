@@ -7,7 +7,8 @@ COPY yarn.lock .
 COPY server.js .
 COPY .pnp.cjs .
 COPY .pnp.loader.mjs .
-COPY .yarn/ .
+COPY .yarnrc.yml .yarnrc.yml
+COPY .yarn/ .yarn/
 
 # Install dependencies
 RUN yarn install
