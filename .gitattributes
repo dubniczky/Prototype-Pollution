@@ -1,7 +1,6 @@
 # Force line endings for shell files
 *.sh eol=lf
 *.ps1 eol=crlf
-
 # Force LFS for binary
 *.png filter=lfs diff=lfs merge=lfs -text
 *.zip filter=lfs diff=lfs merge=lfs -text
