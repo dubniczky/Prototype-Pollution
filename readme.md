@@ -1,12 +1,12 @@
 # JavaScript Prototype Pollution Attack
 
+JavaScript Prototype Pollution Attack demo against a NodeJS Express server using Lodash
+
 <div align="center">
   <a href="https://gitlab.com/richardnagy/security/protopoll">
     <img src="https://gitlab.com/richardnagy/security/protopoll/-/raw/main/assets/logo.png" alt="Logo" width="130" height="150"/>
   </a>
 </div>
-
-JavaScript Prototype Pollution Attack demo against a NodeJS Express server using Lodash
 
 [[_TOC_]]
 
