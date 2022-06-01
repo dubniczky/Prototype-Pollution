@@ -13,10 +13,8 @@ let user = {
 }
 
 app.post('/process', (req, res) => {
-    const b = req.body
-
     // Create a defaults object, useful for dealing with unset properties
-    const defaults = {
+    let defaults = {
         a: 0,
         b: 0,
         c: 0
@@ -25,12 +23,14 @@ app.post('/process', (req, res) => {
     // Exploit: Lodash merge in v4.17.4 is vulnerable to prototype pollution
     // Merges data from right hand object to left hand object, modifying it
     // Since we can override proto, we added admin=true to ALL objects
-    _.merge( defaults, b )
+    _.merge( defaults, req.body )
 
     // Print admin from polluted prototype
     console.log(({}).admin)
 
-    return res.sendStatus(200)
+    let {a,b,c} = defaults
+
+    return res.send(`${a+b+c}`)
 })
 
 app.get('/adminonly', (req, res) => {
