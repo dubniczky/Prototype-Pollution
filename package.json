@@ -13,5 +13,6 @@
   "dependencies": {
     "express": "^4.18.1",
     "lodash": "4.17.4"
-  }
+  },
+  "packageManager": "yarn@3.2.1"
 }

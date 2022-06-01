@@ -5,6 +5,9 @@ WORKDIR /app
 COPY package.json .
 COPY yarn.lock .
 COPY server.js .
+COPY .pnp.cjs .
+COPY .pnp.loader.mjs .
+COPY .yarn/ .
 
 # Install dependencies
 RUN yarn install
@@ -13,5 +16,5 @@ RUN yarn install
 EXPOSE 8080
 
 # Add start command
-ENTRYPOINT [ "node" ]
+ENTRYPOINT [ "yarn", "node" ]
 CMD [ "server" ]
