@@ -1,0 +1,12 @@
+{
+  "name": "protopoll",
+  "version": "1.0.0",
+  "description": "JavaScript Prototype Pollution attack performed against a NodeJS server",
+  "main": "server.js",
+  "repository": "https://gitlab.com/richardnagy/security/protopoll",
+  "author": "Richard Antal Nagy <nagy.richard.antal@gmail.com>",
+  "license": "MIT",
+  "exports": {
+    "./*": "./*"
+  }
+}
