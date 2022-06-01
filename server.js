@@ -28,11 +28,12 @@ app.post('/process', (req, res) => {
     // Print admin from polluted prototype
     console.log(({}).admin)
 
+    // Add numbers, then return. Not part of the exploit, just simulating some functionality
     let {a,b,c} = defaults
-
     return res.send(`${a+b+c}`)
 })
 
+// Page only accessible for users with truthy admin property
 app.get('/adminonly', (req, res) => {
     if (!user.admin) {
         return res.sendStatus(403)
@@ -41,4 +42,5 @@ app.get('/adminonly', (req, res) => {
     return res.sendStatus(200)
 })
 
+// Start server
 app.listen(8080)
