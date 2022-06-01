@@ -12,6 +12,28 @@ Prototype Pollution is an injection attack targeting JavaScript runtimes. Using 
 
 ### Starting Server
 
+#### Docker Compose
+
+```bash
+docker-compose up
+```
+
+#### Manual Container
+
+Build container
+
+```bash
+docker build -t protopoll .
+```
+
+Run container
+
+```bash
+docker run -p8080:8080 protopoll
+```
+
+#### Manual
+
 Install dependencies:
 
 ```bash
