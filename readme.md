@@ -30,3 +30,11 @@ node server
 - PowerShell: `.\exploit.ps1`
 - Python: `python exploit.py`
 - Rest Client: [extension link](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
+
+## License
+
+Standard MIT license: [document](/LICENSE)
+
+## Disclaimer
+
+This tool is intended for demonstrational purposes, so only use against your own systems or against ones you have authorization for. I take no responsibility for your actions.
