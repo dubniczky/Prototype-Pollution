@@ -8,17 +8,21 @@ JavaScript Prototype Pollution Attack demo against a NodeJS Express server using
 
 Prototype Pollution is an injection attack targeting JavaScript runtimes. Using it, we may overwrite the default values of any object's properties in the running instance. This tampering may lead to controlling the logic of the application, crashing the server or remote code execution.
 
-## Usage
+## Starting Server
 
-### Starting Server
+3 options are included, from simplest to longest:
 
-#### Docker Compose
+1. Using Docker-compose
+1. Manual Container building
+1. Manual installation and running
+
+### Docker Compose
 
 ```bash
 docker-compose up
 ```
 
-#### Manual Container
+### Manual Container
 
 Build container
 
@@ -32,7 +36,7 @@ Run container
 docker run -p8080:8080 protopoll
 ```
 
-#### Manual
+### Manual
 
 Install dependencies:
 
@@ -48,7 +52,7 @@ Start
 node server
 ```
 
-### Running the Exploit
+## Running the Exploit
 
 - Bash: `./exploit.sh`
 - PowerShell: `.\exploit.ps1`
