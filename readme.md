@@ -77,6 +77,16 @@ node server
 - Python: `python exploit.py`
 - Rest Client: [extension link](https://marketplace.visualstudio.com/items?itemName=humao.rest-client)
 
+## Example run
+
+Example server run
+
+![example server run](/assets/example-server.png)
+
+Example exploit
+
+![example server run](/assets/example-exploit.png)
+
 ## License
 
 Standard MIT license: [document](/LICENSE)
