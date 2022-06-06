@@ -21,13 +21,13 @@ build:
     # Docker in docker service to build containers
     - docker:$DOCKER_VERSION-dind
   script:
-    - docker build \
-        -t $CI_REGISTRY_IMAGE \
-        -t $DOCKERHUB_USER/protopoll:latest \
-        --build-arg BUILD_DATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')" \
-        --build-arg BUILD_NAME="detrix/protopoll" \
+    - docker build
+        -t $CI_REGISTRY_IMAGE
+        -t $DOCKERHUB_USER/protopoll:latest
+        --build-arg BUILD_DATE="$(date -u +'%Y-%m-%dT%H:%M:%SZ')"
+        --build-arg BUILD_NAME="detrix/protopoll"
         --build-arg BUILD_VERSION="0.1"
-        --build-arg VCS_REF="$(git rev-parse HEAD)" \
+        --build-arg VCS_REF="$(git rev-parse HEAD)"
         .
 
 # Deploy to GitLab Container Registry
