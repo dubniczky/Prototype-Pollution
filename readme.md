@@ -3,12 +3,16 @@
 JavaScript Prototype Pollution Attack demo against a NodeJS Express server using Lodash
 
 <div align="center">
-  <a href="https://gitlab.com/richardnagy/security/protopoll">
-    <img src="https://gitlab.com/richardnagy/security/protopoll/-/raw/main/assets/logo.png" alt="Logo" width="130" height="150"/>
+  <a href="https://gitlab.com/richard-nagy/">
+    <img src="https://media.githubusercontent.com/media/dubniczky/Prototype-Pollution/20a650ce06cf29977789c6e0665444b955366683/assets/logo.png" alt="Avatar" width="130" height="150"/>
   </a>
 </div>
 
-[[_TOC_]]
+## Support ❤️
+
+If you find the project useful, please consider supporting, or contributing.
+
+[!["Buy Me A Coffee"](https://www.buymeacoffee.com/assets/img/custom_images/orange_img.png)](https://www.buymeacoffee.com/dubniczky)
 
 ## Introduction
 
